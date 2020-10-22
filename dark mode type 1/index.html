@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class='post-body' id='animated-thumbnail'>
+        <h1>Dark Mode</h1>
+      <div class="post-content content_1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, tortor sit amet rhoncus lobortis, leo libero suscipit justo, ac tincidunt ligula eros sit amet sem. Sed lobortis nisl sed diam porttitor, quis lacinia felis lacinia. In urna nulla, consectetur nec nisi vitae, laoreet pellentesque augue. Donec feugiat, velit eu imperdiet semper, ante sem suscipit nulla, congue suscipit ipsum tellus commodo ipsum. Sed pharetra orci a volutpat faucibus.
+      </br> </br>
+      <div class="separator" style="clear: both; text-align: center;">
+      <a data-fancybox="images" href="https://2.bp.blogspot.com/-93lIHqW_YKM/XC70vRtpZSI/AAAAAAAAPQE/AOyXI7G9GU0C_XEmCgEYFmAzCuUZhCeFACLcBGAs/s1600/For%2Ba%2Bminute%2Bshe%2Bstood%2Blooking%2Bat%2Bthe%2Bhouse.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-93lIHqW_YKM/XC70vRtpZSI/AAAAAAAAPQE/AOyXI7G9GU0C_XEmCgEYFmAzCuUZhCeFACLcBGAs/s1600/For%2Ba%2Bminute%2Bshe%2Bstood%2Blooking%2Bat%2Bthe%2Bhouse.jpg" width="640" height="367" data-original-width="1000" data-original-height="574" /></a></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, tortor sit amet rhoncus lobortis, leo libero suscipit justo, ac tincidunt ligula eros sit amet sem. Sed lobortis nisl sed diam porttitor, quis lacinia felis lacinia. In urna nulla, consectetur nec nisi vitae, laoreet pellentesque augue. Donec feugiat, velit eu imperdiet semper, ante sem suscipit nulla, congue suscipit ipsum tellus commodo ipsum. Sed pharetra 
+      </br> </br>
+        <h2>Scroll ke Bawah</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, tortor sit amet rhoncus lobortis, leo libero suscipit justo, ac tincidunt ligula eros sit amet sem. Sed lobortis nisl sed diam porttitor, quis lacinia felis lacinia. In urna nulla, consectetur nec nisi vitae, laoreet pellentesque augue. Donec feugiat, velit eu imperdiet semper, ante sem suscipit nulla, congue suscipit ipsum tellus commodo ipsum.
+      </br> </br>
+      <div class="separator" style="clear: both; text-align: center;">
+      <a href="https://2.bp.blogspot.com/-IAIGLG9yemg/XC70v8bxsBI/AAAAAAAAPQI/aJDJvds7tY4SaZJKVD3MOt15_XkfxFLwACLcBGAs/s1600/I%2Bsat%2Bdown%2Band%2Bthinking.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-IAIGLG9yemg/XC70v8bxsBI/AAAAAAAAPQI/aJDJvds7tY4SaZJKVD3MOt15_XkfxFLwACLcBGAs/s1600/I%2Bsat%2Bdown%2Band%2Bthinking.jpg" width="640" height="454" data-original-width="1000" data-original-height="709" /></a></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, tortor sit amet rhoncus lobortis, leo libero suscipit justo, ac tincidunt ligula eros sit amet sem. Sed lobortis nisl sed diam porttitor, quis lacinia felis lacinia. In urna nulla, consectetur nec nisi vitae, laoreet pellentesque augue. Donec feugiat, velit eu imperdiet semper, ante sem suscipit nulla, congue suscipit ipsum tellus commodo ipsum. Sed pharetra orci a volutpat faucibus.</p>
+      </br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, tortor sit amet rhoncus lobortis, leo libero suscipit justo, ac tincidunt ligula eros sit amet sem. Sed lobortis nisl sed diam porttitor, quis lacinia felis lacinia. In urna nulla, consectetur nec nisi vitae, laoreet pellentesque augue. Donec feugiat, velit eu imperdiet semper, ante sem suscipit nulla, congue suscipit ipsum tellus commodo ipsum. Sed pharetra orci a volutpat faucibus.</p></div>
+     <p>Source: <kbd><a href="https://www.sayemtutorial.com/">  www.sayemtutorial.com </a></kbd></p>
+      <div class='dark-btn'>
+        <i aria-hidden='true' class='fa fa-moon-o'></i>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    </body>
+    <script>const body = document.querySelector("body");
+        const darkModeBtn = document.querySelector(".dark-btn");
+        
+        if (localStorage.getItem("darkModeStatus")) {
+          body.classList.add("dark");
+          darkModeBtn.style.background = "#000";
+        }
+        
+        darkModeBtn.addEventListener('click', function(){
+          if (localStorage.getItem("darkModeStatus")) {
+            body.classList.remove('dark');
+            darkModeBtn.style.background = "#fff";
+                darkModeBtn.style.color = "#fff";
+            localStorage.removeItem("darkModeStatus");
+          } else {
+            body.classList.add('dark');
+            darkModeBtn.style.background = "#000";
+            localStorage.setItem("darkModeStatus", "true");
+          }
+        });</script>
